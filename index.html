@@ -44,7 +44,7 @@ df = pd.read_csv(open_url("/files/ccr_cif_details.csv"))
 
 csv = Element('csv')
 
-csv.write(df.shape) 
+csv.write(df.head()) 
         </py-script> 
 
     </body>
