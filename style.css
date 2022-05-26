@@ -1,0 +1,320 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* My own Code*/
+* {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
+}
+/*Header*/
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.header-branding {
+  display: block;
+  float: center;
+}
+
+.header-brand-logo {
+  margin: 0 auto;
+  /*float: left;*/
+}
+
+.header-brand-text {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1100f0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  /*float: left;*/
+}
+
+header nav ul {
+  display: block;
+  margin: 10px 25px;
+  width: fit-content;
+  float: left;
+}
+
+header nav ul li {
+  display: block-inline;
+  float: left;
+  list-style: none;
+  padding: 15px 10px;
+}
+
+header nav ul li a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: #1100f0;
+  text-transform: uppercase;
+}
+
+.banner-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header-brand-logo {
+    margin: 31px 0 0;
+    float: left;
+  }
+
+  .header-brand-text {
+    margin: 31px 0 0;
+    text-align: left;
+    line-height: 31px;
+    padding: 20 20px 0 40px;
+    float: left;
+    border-right: 3px solid #1100f0;
+  }
+
+  header nav ul {
+    margin: 20px 0px 0px 20px;
+    float: left;
+  }
+
+  header nav ul li a {
+    line-height: 60px;
+  }
+}
+
+/*Footer*/
+
+footer {
+  width: cals(100%-80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #1100f0;
+  overflow: hidden;
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+  padding-top: 80px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+  color: #fff;
+  line-height: 10px;
+}
+
+footer ul li a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 25px;
+}
+
+.footer-sm {
+  width: 30px;
+  float: right;
+  padding-top: 80px;
+}
+
+.footer-sm a img {
+  width: 70%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
