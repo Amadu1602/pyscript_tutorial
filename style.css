@@ -203,6 +203,11 @@ header {
   /*float: left;*/
 }
 
+.header-finance-banner {
+  margin: 0 auto;
+  /*float: left;*/
+}
+
 .header-brand-text {
   font-family: "Times New Roman", Times, serif;
   font-size: 24px;
