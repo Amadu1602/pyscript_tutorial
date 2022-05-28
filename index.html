@@ -23,9 +23,10 @@
 
         <py-env>
             - pandas
+            - numpy
             - pannel ==0.13.1a2
-            - matplotlib
-            <!-- - paths:
+            <!--- matplotlib
+            - paths:
                 - data.py -->
         </py-env>
     </head>
@@ -52,8 +53,10 @@
         <!--<py-script src="csv.py"> -->
         <py-script> 
 import pandas as pd
+import asyncio
+import panel as pn
+from panel.io.pyodide import show
 
-from pyodide.http import open_url
 
 #<!-- df = pd.read_csv(open_url("https://raw.gitbusercontent.com/mwaskom/seaborn-data/master/diamonds.csv")) -->
 #df = pd.read_csv(open_url("/files/ccr_cif_details.csv"))
