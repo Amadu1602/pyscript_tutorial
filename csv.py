@@ -22,5 +22,3 @@ uploadButton.on_click(process_file)
 await show(fileInput, 'fileinput')
 await show(uploadButton, 'upload')
 await show(table, 'table')
-
-print('uploaded')
