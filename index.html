@@ -22,11 +22,11 @@
         </script>
 
         <py-env>
-            - numpy
             - pandas
+            - pannel ==0.13.1a2
             - matplotlib
-            - paths:
-                - data.py
+            <!-- - paths:
+                - data.py -->
         </py-env>
     </head>
     <body> 
@@ -43,7 +43,11 @@
 
         <h1>Read CSV with Pandas using Pyscript</h1>
 
-        <p id="csv"></p>
+        <!--<p id="csv"></p> -->
+
+        <div id="fileinput"></div>
+        <div id="upload"></div>
+        <div id="table"></div>
 
         <!--<py-script src="csv.py"> -->
         <py-script> 
@@ -52,11 +56,11 @@ import pandas as pd
 from pyodide.http import open_url
 
 #<!-- df = pd.read_csv(open_url("https://raw.gitbusercontent.com/mwaskom/seaborn-data/master/diamonds.csv")) -->
-df = pd.read_csv(open_url("/files/ccr_cif_details.csv"))
+#df = pd.read_csv(open_url("/files/ccr_cif_details.csv"))
 
-csv = Element('csv')
+#csv = Element('csv')
 
-csv.write(df.head()) 
+#csv.write(df.head()) 
         </py-script> 
 
     </body>
