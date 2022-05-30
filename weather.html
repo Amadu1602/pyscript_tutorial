@@ -49,7 +49,7 @@ df = df[df['Year']==2020]
 def plot(chart):
     fig, ax=plt.subplots()
     df.plot(y=chart, x="Month", figsize=(8,4), ax=ax)
-    pyscript.write("chart1, fig")
+    pyscript.write("chart1", fig)
 
 from js import document
 from pyodide import create_proxy
@@ -63,8 +63,8 @@ def setup():
     # create a js proxy for the callback function
     change_proxy = create_proxy(selectChange)
 
-e = document.getElementByID("select")
-e.addEventListener("change", change_proxy)
+    e = document.getElementByID("select")
+    e.addEventListener("change", change_proxy)
         </py-script> 
     </body>
 </html>
