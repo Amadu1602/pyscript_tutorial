@@ -43,7 +43,8 @@ from pyodide.http import open_url
 url = 'https://raw.githubusercontent.com/alanjones2/uk-historical-weather/main/data/Heathrow.csv'
 url_content = open_url(url)
 df = pd.read_csv(url_content)
-df = df.query('Year==2020')
+#df = df.query('Year==2020')
+df = df[df['Year']==2020]
 
 def plot(chart):
     fig, ax=plt.subplots()
