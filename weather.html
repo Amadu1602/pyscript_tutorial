@@ -35,7 +35,20 @@
             </div>
         </div>
         <py-script>
-        
+# import libraries
+import pandas as pd 
+import matplotlib.pyplot as plt 
+from pyodide.http import open_url
+
+url = 'https://raw.gitbuhusercontent.com/alanjones/uk-historical-weather/main/data/Heathrow.csv'
+url_content = open_url(url)
+df = pd.read_csv(url_content)
+df = df.query('year==2020')
+
+def plot(chart):
+    fig, ax=plt.subplots()
+    df.plot(y=chart, x="Month", figsize=(8,4), ax=ax)
+    pyscript.write("chart1, fig")
         </py-script> 
     </body>
 </html>
