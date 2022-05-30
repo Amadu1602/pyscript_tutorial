@@ -5,7 +5,7 @@ from panel.io.pyodide import show
 
 
 
-fileInput = pn.widgets.FileInput(accept='.csv')
+fileInput = pn.widgets.FileInput(accept=['.csv', '.txt', '.zip'])
 uploadButton = pn.widgets.Button(name='Upload', button_type = 'primary')
 
 table = pn.widgets.Tabulator(pagination='remote', page_size=100)
