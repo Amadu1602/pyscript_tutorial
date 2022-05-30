@@ -39,6 +39,8 @@
 import pandas as pd 
 import matplotlib.pyplot as plt 
 from pyodide.http import open_url
+from pyodidt import create_proxy
+from js import document
 
 url = 'https://raw.githubusercontent.com/alanjones2/uk-historical-weather/main/data/Heathrow.csv'
 url_content = open_url(url)
@@ -48,11 +50,8 @@ df = df[df['Year']==2020]
 
 def plot(chart):
     fig, ax=plt.subplots()
-    df.plot(y=chart, x="Month", figsize=(8,4), ax=ax)
+    df.plot(y=chart, x='Month', figsize=(8,4), ax=ax)
     pyscript.write("chart1", fig)
-
-from js import document
-from pyodide import create_proxy
 
 def selectChange(event):
     choice = document.getElementByID("select").value
