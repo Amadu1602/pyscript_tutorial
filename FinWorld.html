@@ -18,8 +18,10 @@
         <header>
             <section class="header-branding">
                 <div id="UpperBanner" class="_3ce77VUODX2GxJq138_AcE", style="width:calc(100%-96px);">
-                    <div class="col-sm-2 p-2 ml-4 mb-1">
-                        <img class="header-brand-logo" src="static/images/sbg_logo.png" alt="Stanbic Bank Logo" width=70>
+                    <div style="width:100%"
+                        <div class="col-sm-2 p-2 ml-4 mb-1">
+                            <img class="header-brand-logo" src="static/images/sbg_logo.png" alt="Stanbic Bank Logo" width=70>
+                        </div>
                     </div>
                 <div class="row">
                     <!--div class="col-sm-2 p-2 ml-4 mb-1"-->
@@ -33,55 +35,7 @@
                 <!--<img class="header-finance-banner" src="static/images/sbgfinance_banner.png" alt="SBG Finance Banner" width=100% height="50">-->
                 </div>
             </section>
-        </header>
-        <div class ="jumbotron">
-            <!--img id="logo" src="/static/images/sbg_logo.png" alt="SBG Logo" width=500-->
-            <h1>GH-FinWorld</h1>
-            <!--p class="lead">Some graphs about the weather in Accra in 2022</p-->
-        </div>
-        <div class="row">
-            <div class="col-sm-2 p-2 ml-4 mb-1">
-                <button type="button" class="btn btn-secondary">Select chart from list:</button>
-            </div>
-            <div class="col-sm-4 p-2 mr-4 mb-1">
-                <select class="form-control" id="select">
-                    <option value="Tmax">Maximum Temperature</option>
-                    <option value="Tmin">Minimum Temperature</option>
-                    <option value="Sun">Sun</option>
-                    <option value="Rain">Rain</option>
-                </select>
-            </div>
-        </div>
-        <py-script>
-# import libraries
-import pandas as pd 
-import matplotlib.pyplot as plt 
-from pyodide.http import open_url
-from pyodide import create_proxy
-from js import document
 
-url = 'https://raw.githubusercontent.com/alanjones2/uk-historical-weather/main/data/Heathrow.csv'
-url_content = open_url(url)
-df = pd.read_csv(url_content)
-#df = df.query('Year==2020')
-df = df[df['Year']==2020]
 
-def plot(chart):
-    fig, ax=plt.subplots()
-    df.plot(y=chart, x='Month', figsize=(8,4), ax=ax)
-    pyscript.write("chart1", fig)
-
-def selectChange(event):
-    choice = document.getElementByID("select").value
-    plot(choice)
-
-# set the proxy
-def setup():
-    # create a js proxy for the callback function
-    change_proxy = create_proxy(selectChange)
-
-    e = document.getElementByID("select")
-    e.addEventListener("change", change_proxy)
-        </py-script> 
     </body>
 </html>
