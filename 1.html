@@ -1,0 +1,65 @@
+<body stlye="position:relative;min-height:100%;font-family: 'Source Sans Pro',sans-serif;">
+    <div style="display:none;position:ablsolute;z-index:6;top:75px;right:0;height:75px;padding-top:22px;padding-right:20px;background-color:#04AA6D;" id="googleSearch">
+        <div class="gcse-search"></div>
+    </div>
+    <div style="display:none;position:absolute;z-index:5;top:75px;right:0;height:75px;padding-right:15px;background-color:#04AA6D;text-align:right;padding-top:25px;" id="google_translate_element"></div>
+    <div class="w3-bar w3-card-2 notranslate" style="padding-left:12px;padding-right:16px;overflow:visible">
+        ::before
+        <a href="https://www.stanbicbank.com.gh" class="w3-bar-item w3-button w3-hover-none w3-left w3-padding-16" title="Home" style="width:77px;">
+            <i class="fa fa-logo" style="position:relative;z-index:1;color:#04AA6D;font-size:42px!important;">
+                ::before
+            </i>
+        </a>
+        <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:116px">
+            "Tutorials "
+            <i class=""fa fa-caret-down></i>
+            <i class="fa fa-caret-up" style="display:none"></i>
+        </a>
+        <a class="w3-bar-item w3-button w3-hide-small barex bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open_nav('references')" id="navbtn_references" title="References" style="width:132px">
+            "References "
+            <i class=""fa fa-caret-down></i>
+            <i class="fa fa-caret-up" style="display:none"></i>
+        </a>
+        <a class="w3-bar-item w3-buttion w3-hide-small barex bar-item-hover w3-padding-24 ws-hide-800" href="javascript:void(0)" onclick="w3_open_nav('ecercises')" id="navbtn_exercises" title="Excercises" style="width:118px">
+            "Exercises "
+            <i class=""fa fa-caret-down></i>
+            <i class="fa fa-caret-up" style="display:none"></i>
+        </a>
+        <a class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex ws-hide-1200" href="https://www.stanbicbankghana.com" title="Video Tutorials" onclick="gal('send','event','Videos','fromTopnavDefault')">Videos</a>
+        <a class="w3-bar-item w3-button w3-hide-medium bar-item-hover w3-hide-small w3-padding-24 barex ws-hide-1080" href="/pro.index.php" title="Pro Subscription" onclick="fa('send','event','Pro','fromTopnavDefault')">
+            "Pro "
+            <span class="ribbon-topnav ws-hide-1250">NEW</span>
+        </a>
+        <a class="w3-bar-item w3-button bar-item-hover w3-padding-24" href="javascript:void(0)" onclick="w3_open()" id="navbtn_menu" title="Menu" style="width:93px">
+            "Menu "
+            <i class="fa fa-caret-down">
+                ::before
+            </i>
+            <i class="fa fa-caret-up" style="display:none;"></i>
+        </a>
+        <div id="loginactioncontainer" class="w3-right w3-padding-16">
+            <div id="mypagediv" style="display:none;"></div>
+            <a id="w3loginbtn" class="w3-bar-item w3-btn w3-right" href="https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com" target="_self" style="display: inline;">Log in</a>
+        </div>
+        <div class="w3-right w3-padding-16 w3-white">
+            <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-medium barex" style="width:132px;border-radius:25px;margin-right:8px;" href="https://courses.w3schools.com/" target="_blank id=cert_navbtn" onclick="ga('send','event','Courses','Clicked on courses in Default top navigation');" title="Courses">Paid Courses</a>
+            <a class="w3-bar-item w3-button bar-item-hover w3-right w3-hide-small barex ws-pink" style="border-radius:25px; margin-right:8px;" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send','event','spacesFromTopnavDefault','click');" title="Get Your Own Website With W3 Schools Spaces">
+               "Website "
+               <span class="ribbon-topnav ws-hide-1250">NEW</span>
+            </a>
+        </div>
+        <div class="w3-right w3-padding-16 ext_icon_container" style="padding-top:0!important;padding-bottom:0!important">
+            <a class="w3-bar-item w3-button bar-icon-hover w3-right w3searchbtntopnav" href="javascript:void(0)" style="padding-top:24px;padding-bottom:24px;padding-left:12px;padding-right:12px;margin-right:8px" onclick="gSearch(this)" title="Search W3Schools" id="nav_search_btn"><i class="fa"></i></a>
+            <a class="w3-bar-item w3-button bar-icon-hover w3-right w3translatebtntopnav" href="javascript:void(0)" style="padding-top:24px;padding-bottom:24px;padding-left:12px;padding-right:12px" onclick="gTra(this)" title="Translate W3Schools" id="nav_translate_btn"><i class="fa"></i></a>
+            <a class="w3-bar-item w3-button bar-icon-hover w3-right w3-hide-small" style="padding-top:24px;padding-bottom:24px;padding-left:12px;padding-right:12px" href="javascript:void(0)" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()" onclick="changepagetheme(2)" xxonclick="changecodetheme(this)" xxtitle="Toggle Dark Code"><i class="fa"></i></a>
+            <div id="darkmodemenu" class="ws-grey w3-hide-small" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()">
+                <input id="radio_darkpage" type="checkbox" name="radio_theme_mode" onclick="click_darkpage()"><label for="radio_darkpage"> Dark mode</label>
+                <br>
+                <input id="radio_darkcode" type="checkbox" name="radio_theme_mode" onclick="click_darkcode()"><label for="radio_darkcode"> Dark code</label>
+            </div>
+        </div>
+        ::after
+    </div>
+
+
+</body>
