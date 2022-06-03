@@ -19,11 +19,15 @@ nav {
     border: 1px solid #333;
     width: 50%;
     margin: 1rem auto;
+    padding: 1rem;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+nav li:hover{
+    background-color: #f0c808;
 }
 nav a {
     color: #00bff3;
