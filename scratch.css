@@ -3,9 +3,13 @@
 }
 
 nav {
-    border:2px solid blue;
+    border:5px solid blue;
 }
 
-ul{
+ul {
     border: 2px solid black;
+}
+
+li {
+    border: 2px spotted green;
 }
