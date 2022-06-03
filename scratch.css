@@ -28,6 +28,7 @@ nav ul {
 nav li:hover{
     background-color: #f0c808;
     padding: 0.5 rem 1rem;
+    color: #ff583d;
 }
 nav a {
     color: #00bff3;
