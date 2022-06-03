@@ -26,7 +26,6 @@ nav ul {
     padding: 0;
 }
 nav li:hover{
-    background-color: #f0c808;
     padding: 0.5 rem 1rem;
     color: #ff583d;
 }
@@ -42,4 +41,5 @@ nav a:focus {
 }
 nav a:hover {
     color: #ff583d;
+    background-color: #f0c808;
 }
