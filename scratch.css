@@ -24,7 +24,6 @@ nav a {
     color: #00bff3;
     text-decoration: none;
     font-size: 1.5rem;
-    font-weight: 600;
 }
 nav a:focus {
     background-color: #f0c808;
@@ -32,4 +31,5 @@ nav a:focus {
 }
 nav a:hover {
     color: #ff583d;
+    font-weight: 600;
 }
