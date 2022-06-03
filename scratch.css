@@ -28,13 +28,14 @@ nav ul {
 nav li:hover{
     padding: 0.5 rem 1rem;
     color: #ff583d;
-    background-color: #f0c808;
+    /*background-color: #f0c808;*/
 }
 nav a {
     color: #00bff3;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
+    display: block;
 }
 nav a:focus {
     background-color: #f0c808;
