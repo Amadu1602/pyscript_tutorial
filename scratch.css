@@ -42,3 +42,12 @@ nav a:hover {
     color: #ff583d;
     background-color: #f0c808;
 }
+.active{
+    color: #ff583d;
+    background-color: #c5e5ed;
+    border-top: 5px solid #00bff3;
+    border-bottom: 5px solid #00bff3;
+}
+.active:hover {
+    background-color: black;
+}
