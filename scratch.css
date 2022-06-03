@@ -16,20 +16,20 @@ a {
 }
 */
 nav ul {
-    list-style-type: none;
-    margin:0%;
+    list-style-type:none;
+    margin:0;
     padding:0;
 }
 nav a {
     color:#00bff3;
-    text-decoration: none;
+    text-decoration:none;
     font-size:1.5 rem;
     font-weight: 600;
 }
 nav a:focus {
-    background-color: #f0c808;
+    background-color:#f0c808;
     color:black;
 }
 nav a:hover {
-    color:#ff583d
+    color:#ff583d;
 }
