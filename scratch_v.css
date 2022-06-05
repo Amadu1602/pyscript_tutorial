@@ -27,7 +27,8 @@ nav ul {
     padding: 0;
 }
 nav a {
-    color: #00bff3;
+    /*color: #00bff3;*/
+    color: #0966c2;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
@@ -41,12 +42,14 @@ nav a:focus {
 nav a:hover {
     color: #ff583d;
     background-color: #f0c808;
+    background-image: url(https://assets.codepen.io/296057/lil-yellowdots.png)
 }
 .active{
     color: #ff583d;
     background-color: #c5e5ed;
     border-top: 5px solid #00bff3;
     border-bottom: 5px solid #00bff3;
+    background-image: url(https://assets.codepen.io/296057/lil-bluedots.png)
 }
 .active:hover {
     background-color: black;
