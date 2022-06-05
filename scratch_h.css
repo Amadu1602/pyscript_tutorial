@@ -1,5 +1,6 @@
 nav {
-    background-color: #0966c2;
+    /*background-color: #0966c2;*/
+    background-color: black;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
@@ -20,12 +21,14 @@ nav a {
     padding: 0.5rem 1rem;
 }
 nav a:focus {
-    /*background-color: whitesmoke;*/
+    background-color: whitesmoke;
     color: red;
 }
 nav a:hover {
-    color: whitesmoke;
-    background-color: black;
+    /*color: whitesmoke;*/
+    color: red;
+    /*background-color: black;
+    background-color: #0966c2;*/
 }
 /*.active {
     color: red;
