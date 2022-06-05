@@ -1,6 +1,6 @@
 nav {
     border: 1px solid #0966c2;
-    background-color: #0966c3;
+    background-color: #0966c2;
 }
 nav ul {
     list-style: none;
@@ -17,4 +17,20 @@ nav a {
     font-weight: 600;
     display: block;
     padding: 0.5rem 1rem;
+}
+nav a:focus {
+    background-color: whitesmoke;
+    color: #0966c2
+}
+nav a:hover {
+    color: whitesmoke;
+    background-color: black;
+}
+.active {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.active:hover {
+    background-color: aqua;
+    color: darkgreen;
 }
