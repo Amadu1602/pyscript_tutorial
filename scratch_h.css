@@ -1,6 +1,7 @@
 nav {
-    border: 1px solid #0966c2;
     background-color: #0966c2;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 nav ul {
     list-style: none;
