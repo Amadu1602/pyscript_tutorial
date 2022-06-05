@@ -20,18 +20,17 @@ nav a {
     padding: 0.5rem 1rem;
 }
 nav a:focus {
-    background-color: whitesmoke;
-    color: #0966c2
+    /*background-color: whitesmoke;*/
+    color: red;
 }
 nav a:hover {
     color: whitesmoke;
     background-color: black;
 }
-.active {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+/*.active {
+    color: red;
 }
 .active:hover {
     background-color: aqua;
     color: darkgreen;
-}
+}*/
