@@ -26,6 +26,7 @@ nav a {
     font-weight: 400;
     display: block;
     padding: 0.5rem 1rem;
+    float: inline-end;
 }
 nav a:focus {
     background-color: whitesmoke;
@@ -38,7 +39,7 @@ nav a:hover {
     background-color: #0966c2;*/
 }
 .logo{
-    float:left;
+    float:inline-start;
 }
 /*.active {
     color: red;
