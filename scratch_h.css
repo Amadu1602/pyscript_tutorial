@@ -3,6 +3,7 @@ body {
 }
 .navbardiv{
     background-color: black;
+    text-align: center;
 }
 .banner {
     display: block;
