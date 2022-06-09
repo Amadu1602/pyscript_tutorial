@@ -1,6 +1,10 @@
 body {
     background-color: lightgrey;
 }
+.navbardiv{
+    background-color: black;
+
+}
 .banner {
     /*float:right;*/
     width:50%;
