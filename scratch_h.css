@@ -41,6 +41,11 @@ nav a:hover {
 .logo{
     float:left;
 }
+.banner {
+    float:right;
+    width:50%;
+    padding-left: 100px;
+}
 /*.active {
     color: red;
 }
