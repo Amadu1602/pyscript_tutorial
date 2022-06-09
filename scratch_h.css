@@ -55,10 +55,11 @@ nav a:hover {
 .welcome{
     text-align:center;
 }
-div h2{
+div h1{
     display:block;
     margin-left: auto;
-    margin-left: auto;    
+    margin-left: auto;
+    color: #0966c2    
 }
 /*.active {
     color: red;
