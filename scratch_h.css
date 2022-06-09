@@ -52,7 +52,14 @@ nav a:hover {
 .logo{
     float:left;
 }
-
+.welcome{
+    text-align:center;
+}
+div h2{
+    display:block;
+    margin-left: auto;
+    margin-left: auto;    
+}
 /*.active {
     color: red;
 }
