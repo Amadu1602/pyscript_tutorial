@@ -3,13 +3,10 @@ body {
 }
 .navbardiv{
     background-color: black;
-
-
 }
 .banner {
     /*float:right;*/
     width:50%;
-    justify-content: center;
     padding-left: 100px;
 }
 nav {
