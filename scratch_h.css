@@ -16,9 +16,9 @@ nav ul {
     justify-content: center;
     align-items:center;
 }
-nav li {
-    /*display: inline-block;*/
-}
+/*nav li {
+    isplay: inline-block;
+}*/
 nav a {
     color:ghostwhite;
     text-decoration: none;
