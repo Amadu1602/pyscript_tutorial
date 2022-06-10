@@ -1,6 +1,17 @@
 body {
     background-color: lightgrey;
 }
+.navbardiv{
+    background-color: black;
+    text-align: center;
+}
+.banner {
+    display: block;
+    height: 150;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 nav {
     /*background-color: #0966c2;*/
     background-color: black;
@@ -41,10 +52,14 @@ nav a:hover {
 .logo{
     float:left;
 }
-.banner {
-    float:right;
-    width:50%;
-    padding-left: 100px;
+.welcome{
+    text-align:center;
+}
+div h1, h2{
+    display:block;
+    margin-left: auto;
+    margin-left: auto;
+    color: #0966c2    
 }
 /*.active {
     color: red;
