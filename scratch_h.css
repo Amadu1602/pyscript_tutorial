@@ -40,6 +40,7 @@ nav a {
     display: block;
     padding: 0.5rem 1rem;
     float: right;
+    font-family: 'Times New Roman', Times, serif;
 }
 nav a:focus {
     background-color: whitesmoke;
