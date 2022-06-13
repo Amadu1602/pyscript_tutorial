@@ -18,6 +18,8 @@
             - pandas
             - panel==0.13.1a2
             - matplotlib
+            - time
+            - datetime
         </py-env>
     </head>
     <body>
@@ -47,4 +49,13 @@
             <br>
             <h2>Building future ready Finance processes</h2>
         </div>
+        <pyscript>
+import time
+from datetime import datetime
+
+while True:
+    now = datetime.now()
+    print(now.strftime("%m/%d/%Y %H:$M:%S"))
+    time.sleep(1)
+        </pyscript>
     </body>
