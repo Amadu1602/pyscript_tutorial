@@ -6,7 +6,7 @@
         <meta name ="viewport" content="width=device-width", initial-scale="1.0">
         <title>MadWeb </title>
 
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="scratch_h.css">
@@ -18,8 +18,6 @@
             - pandas
             - panel==0.13.1a2
             - matplotlib
-            - time
-            - datetime
         </py-env>
     </head>
     <body>
@@ -28,8 +26,9 @@
                 <span class="sr-only">Open main menu</span>
                 <i class="fa-solid fa-bars" aria-hidden=True></i>
             </a>
+        </header>
         <div class="navbardiv">
-        <img class="banner" src="static/images/sbgfinance_banner_2.png" alt="Stanbic Bank Logo"/>
+            <img class="banner" src="static/images/sbgfinance_banner_2.png" alt="Stanbic Bank Logo"/>
         </div>
         <nav id="navbar">
             <img class="logo" src="static/images/sbg_logo.png" alt="Stanbic Bank Logo" width="50"/>
@@ -49,13 +48,13 @@
             <br>
             <h2>Building future ready Finance processes</h2>
         </div>
-        <pyscript>
-import time
-from datetime import datetime
 
-while True:
-    now = datetime.now()
-    pyscript.write(now.strftime("%m/%d/%Y %H:$M:%S"))
-    time.sleep(1)
+        <pyscript>
+<!-- while True: -->
+    <!-- now = datetime.now() -->
+    <!-- pyscript.write(now.strftime("%m/%d/%Y %H:$M:%S")) -->
+    <!-- time.sleep(1) -->
+pyscript.write("Hello Amadu")
+<!-- print("Hello Amadu") -->
         </pyscript>
     </body>
