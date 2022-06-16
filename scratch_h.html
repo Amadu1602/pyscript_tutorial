@@ -16,8 +16,10 @@
         <py-env>
             - numpy
             - pandas
-            - panel==0.13.1a2
+            - panel
             - matplotlib
+            <!-- - time -->
+            <!-- - datetime -->
         </py-env>
     </head>
     <body>
@@ -49,12 +51,9 @@
             <h2>Building future ready Finance processes</h2>
         </div>
 
-        <pyscript>
-<!-- while True: -->
-    <!-- now = datetime.now() -->
-    <!-- pyscript.write(now.strftime("%m/%d/%Y %H:$M:%S")) -->
-    <!-- time.sleep(1) -->
-pyscript.write("Hello Amadu")
-<!-- print("Hello Amadu") -->
-        </pyscript>
+        <py-script src="data.py">
+
+
+        </py-script>
     </body>
+</html>
