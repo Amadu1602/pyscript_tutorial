@@ -65,6 +65,11 @@ div h1, h2{
     color: #0966c2;    
     font-family: "Copperplate";
 }
+py-script{
+    color:#0966c2;  
+    display: block;
+    padding-left: 2rem;
+}
 /*.active {
     color: red;
 }
